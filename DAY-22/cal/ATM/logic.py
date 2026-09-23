@@ -1,0 +1,58 @@
+'''
+data ={
+    12345:{'name':"Ranjith Kumar",'pin':4363,'balance':10000,'history':[]},
+    56789:{'name':"Rasool",'pin':4363,'balance':10000,'history':[]},
+    43567:{'name':"Dinesh",'pin':4363,'balance':10000,'history':[]}
+}
+
+def login():
+    global acc_num
+    acc_num = int(input("Enter your account number: "))
+    pin = int(input("Enter the pin: "))
+    if acc_num in data and data[acc_num]['pin'] == pin:
+        print("Login successful.")
+        return True
+    else:
+        print("Invalid Login")
+
+def menu():
+    print(f"Welcome to the ATM, {data[acc_num]['name']}")
+    print('[C]heck Balance')
+    print('[D]eposit')
+    print('[W]ithdraw')
+    print('[v]iew Transaction')
+    print('[E]xit')
+
+def checkbalance():
+    print(f'Hello {data[acc_num]["name"]},')
+    print("Current Balance: ", data[acc_num]['balance'],end='\n\n')
+
+def deposit():
+    amount = int(input("Enter the amount to deposit:"))
+    data[acc_num]["balance"] += amount
+    data[acc_num]["history"].append(f"{amount}is deposited")
+    print(f"{amount} is deposited successfully")
+    checkbalance()
+
+
+def withdraw():
+    amount = int(input("Enter the amount to withdraw:"))
+    if data[acc_num]["balance"] >= amount:
+       data[acc_num]["balance"] -= amount
+       data[acc_num]["history"].append(f"{amount} is withdrawn")
+       print(f"{amount} is withdrawn successfully")
+       checkbalance()
+    else:
+     print("Insufficient balance")
+
+
+def viewtransaction():
+    if data[acc_num]["history"]:
+        print("===============Transaction History===============")
+        for i in data[acc_num]["history"]:
+            print(i)
+        else:
+            print("**********End of the History**********")
+    else:
+        print("No transaction history")
+'''
