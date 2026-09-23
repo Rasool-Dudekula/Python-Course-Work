@@ -1,0 +1,38 @@
+OBJECT ORIENTED PROGRAMMING - NOTES
+
+1. OOP
+Definition: A way of writing code using objects, where each object has properties (data) and behaviors (actions).
+Example: A car object has properties like color and speed, and behaviors like drive and brake.
+
+2. CLASS
+Definition: A blueprint or template used to create objects, it defines what properties and behaviors the object will have.
+Example: A blueprint of a house is a class, and every house built from it is an object.
+
+3. OBJECT
+Definition: A real instance created from a class, it has actual values for the properties defined in the class.
+Example: If Car is a class, then a red Toyota is an object of that class.
+
+4. ENCAPSULATION
+Definition: Wrapping data and related actions into one unit, and hiding the internal details from outside.
+Example: A capsule medicine hides what is inside, you just take it and it works.
+
+5. ABSTRACTION
+Definition: Showing only the necessary features and hiding the complex details behind them.
+Example: While driving a car, you use the steering and pedals, without knowing how the engine works internally.
+
+6. INHERITANCE
+Definition: One class can reuse the properties and behaviors of another class.
+Example: A child inherits features from their parents, like eye color or height.
+
+7. POLYMORPHISM
+Definition: The same action behaves differently depending on the object performing it.
+Example: The word fly means different things for a bird, a plane, and a kite.
+
+8. METHOD OVERLOADING
+Definition: Having multiple methods with the same name but different inputs, within the same class.
+Example: A calculator add function can add two numbers or three numbers, depending on what you pass.
+
+
+9. METHOD OVERRIDING
+Definition: A child class provides its own version of a method that is already defined in the parent class.
+Example: An Animal class has a sound method, but a Dog class overrides it to say bark instead.
